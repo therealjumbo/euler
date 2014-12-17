@@ -44,4 +44,4 @@ for j in range(len(mat[0])):
             
 #check left->right diagonal
 
-print res
+print(res)
