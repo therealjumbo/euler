@@ -10,4 +10,4 @@ num = 0
 for x in str(factorial(100)):
     num += int(x)
     
-print num
+print(num)

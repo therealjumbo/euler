@@ -11,4 +11,4 @@ big_str = str(big_num)
 for i in range(0, len(big_str)):
     res += int(big_str[i])
     
-print res
+print(res)
