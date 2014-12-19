@@ -20,5 +20,5 @@ for i in range(1, 10**6):
         max_len = len_counter
         res = i
         
-print res
-print max_len
+print(res)
+print(max_len)
