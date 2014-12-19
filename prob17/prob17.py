@@ -186,13 +186,12 @@ def create_hundreds(num):
     else:
         raise LookupError()
 
+total = 0
 thous = "one thousand"
-
 total = count_number_len(thous)
 
-for i in range(1, 999):
+for i in range(1, 1000):
     tmp = create_hundreds(i)
-    print(tmp)
     total += count_number_len(tmp)
 
 print(total)
