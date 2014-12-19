@@ -69,6 +69,6 @@ while(len(my_factors) < 500):
     my_factors = factor_uniques(my_triangle)
     i += 1
 
-print i
-print my_triangle
-print len(my_factors)
+print(i)
+print(my_triangle)
+print(len(my_factors))
