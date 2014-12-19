@@ -77,7 +77,7 @@ def create_tens(num):
     
     elif 80 <= num < 90:
         if num == 80:
-            return "eightY"
+            return "eighty"
         else:
             tmp = create_ones(num - 80)
             return "eighty-" + tmp
@@ -181,7 +181,7 @@ def create_hundreds(num):
             return "nine hundred"
         else:
             tmp = create_tens(num - 900)
-            return "nine hundred and "
+            return "nine hundred and " + tmp
 
     else:
         raise LookupError()
@@ -192,6 +192,7 @@ total = count_number_len(thous)
 
 for i in range(1, 999):
     tmp = create_hundreds(i)
+    print(tmp)
     total += count_number_len(tmp)
 
 print(total)
