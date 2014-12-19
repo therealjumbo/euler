@@ -10,10 +10,9 @@ def calculate_binomial_coefficient(n, k):
     return (math.factorial(n) / math.factorial(k) / math.factorial(n - k))
     
 
-grid_height = 20
-grid_width = 20
+grid_side = 20
 
-n = triangle_row(grid_height)
+n = triangle_row(grid_side)
 print(n)
 k = coefficient_index(n)
 print(k)
