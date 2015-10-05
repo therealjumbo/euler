@@ -16,7 +16,6 @@ def is_prime(n):
     i = 5
     w = 2
     while i * i <= n:
-        print(i, w)
         if n % i == 0: 
             return False
 
@@ -46,3 +45,14 @@ def prime_factors(n):
             n //= i
             factors.append(i)
     return factors
+
+def proper_divisors(n):
+    """Returns all proper divisors of n"""
+    divisors = [ d for d in range(2, n//2+1) if n % d == 0 ]
+    return divisors
+
+def is_amicable(a, b):
+    """Returns True if a and b are amicable numbers"""
+    a_divisors = proper_divisors(a)
+    b_divisors = proper_divisors(b)
+    return (sum(a_divisors) == b) and (sum(b_divisors) == a) 
