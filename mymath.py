@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# gcd is in the fractions module
+# note that gcd is in the fractions module
 # so to use:
 # from fractions import gcd
 # gcd(20, 8)
