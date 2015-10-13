@@ -34,6 +34,8 @@ def is_prime(number):
 
 def largest_prime_factor(number):
     """Returns the largest prime factor of n"""
+    if number < 2:
+        raise ValueError("A value less than 2 was passed in")
     i = 2
     while i * i <= number:
         if number % i:
