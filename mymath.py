@@ -8,7 +8,7 @@ library. Most of them are related to prime numbers and divisors"""
 # 4
 
 def is_prime(number):
-    """Returns True if n is prime"""
+    """Returns True if number is prime"""
     if number < 2:
         return False
     if number == 2:
@@ -33,7 +33,7 @@ def is_prime(number):
     return True
 
 def largest_prime_factor(number):
-    """Returns the largest prime factor of n"""
+    """Returns the largest prime factor of number"""
     if number < 2:
         raise ValueError("A value less than 2 was passed in")
     i = 2
@@ -45,7 +45,7 @@ def largest_prime_factor(number):
     return number
 
 def prime_factors(number):
-    """Returns all prime factors of n"""
+    """Returns all prime factors of number"""
     i = 2
     factors = []
     while i * i <= number:
@@ -57,12 +57,12 @@ def prime_factors(number):
     return factors
 
 def proper_divisors(number):
-    """Returns all proper divisors of n"""
+    """Returns all proper divisors of number"""
     divisors = [d for d in range(2, number//2+1) if number % d == 0]
     return divisors
 
 def is_amicable(num_a, num_b):
-    """Returns True if a and b are amicable numbers"""
+    """Returns True if num_a and num_b are amicable numbers"""
     a_divisors = proper_divisors(num_a)
     b_divisors = proper_divisors(num_b)
     return (sum(a_divisors) == num_b) and (sum(b_divisors) == num_a)
