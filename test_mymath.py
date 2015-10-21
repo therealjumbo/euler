@@ -49,3 +49,13 @@ def test_proper_divisors():
     assert proper_divisors(16) == [1, 2, 4, 8]
     assert proper_divisors(18) == [1, 2, 3, 6, 9]
     assert proper_divisors(20) == [1, 2, 4, 5, 10]
+
+def test_is_amicable():
+    assert is_amicable(1, 2) == False
+    assert is_amicable(2, 3) == False
+    assert is_amicable(12, 16) == False
+    assert is_amicable(220, 284) == True
+    assert is_amicable(1184, 1210) == True
+    assert is_amicable(2620, 2924) == True
+    assert is_amicable(5020, 5564) == True
+    assert is_amicable(6232, 6368) == True
