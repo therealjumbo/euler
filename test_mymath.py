@@ -37,3 +37,15 @@ def test_first_100_largest_prime_factor():
     17, 43, 29, 11, 89, 5, 13, 23, 31, 47, 19, 3, 97, 7, 11, 5]
     for i, factor in enumerate(factors):
         assert largest_prime_factor(i + 2) == factor
+
+def test_proper_divisors():
+    assert proper_divisors(4) == [1, 2] 
+    assert proper_divisors(6) == [1, 2, 3]
+    assert proper_divisors(8) == [1, 2, 4]
+    assert proper_divisors(10) == [1, 2, 5]
+    assert proper_divisors(12) == [1, 2, 3, 4, 6]
+    assert proper_divisors(14) == [1, 2, 7]
+    assert proper_divisors(15) == [1, 3, 5]
+    assert proper_divisors(16) == [1, 2, 4, 8]
+    assert proper_divisors(18) == [1, 2, 3, 6, 9]
+    assert proper_divisors(20) == [1, 2, 4, 5, 10]

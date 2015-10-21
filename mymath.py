@@ -58,7 +58,9 @@ def prime_factors(number):
 
 def proper_divisors(number):
     """Returns all proper divisors of number"""
-    divisors = [d for d in range(2, number//2+1) if number % d == 0]
+    divisors = [1]
+    temp = [d for d in range(2, number//2+1) if number % d == 0]
+    divisors += temp
     return divisors
 
 def is_amicable(num_a, num_b):
