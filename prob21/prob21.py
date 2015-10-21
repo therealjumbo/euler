@@ -14,5 +14,4 @@ for a in range(1, 10000):
 total = 0
 for amicable in all_amicables:
     total += amicable[0] + amicable[1]
-print(all_amicables)
 print(total)
