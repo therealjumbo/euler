@@ -22,12 +22,12 @@ def test_first_100_primes_is_prime_():
         assert is_prime(prime) == True
 
 def test_invalid_values_largest_prime_factor():
-   assert_raises(ValueError, largest_prime_factor, -4)
-   assert_raises(ValueError, largest_prime_factor, -3)
-   assert_raises(ValueError, largest_prime_factor, -2)
-   assert_raises(ValueError, largest_prime_factor, -1)
-   assert_raises(ValueError, largest_prime_factor, 0)
-   assert_raises(ValueError, largest_prime_factor, 1)
+    assert_raises(ValueError, largest_prime_factor, -4)
+    assert_raises(ValueError, largest_prime_factor, -3)
+    assert_raises(ValueError, largest_prime_factor, -2)
+    assert_raises(ValueError, largest_prime_factor, -1)
+    assert_raises(ValueError, largest_prime_factor, 0)
+    assert_raises(ValueError, largest_prime_factor, 1)
 
 def test_first_100_largest_prime_factor():
     factors = [2, 3, 2, 5, 3, 7, 2, 3, 5, 11, 3, 13, 7, 5, 2, 17, 3, 19, 5, 7,
