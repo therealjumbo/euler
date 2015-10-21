@@ -65,6 +65,8 @@ def proper_divisors(number):
 
 def is_amicable(num_a, num_b):
     """Returns True if num_a and num_b are amicable numbers"""
+    if num_a == num_b:
+        return False
     a_divisors = proper_divisors(num_a)
     b_divisors = proper_divisors(num_b)
     return (sum(a_divisors) == num_b) and (sum(b_divisors) == num_a)
