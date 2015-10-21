@@ -1,19 +1,18 @@
 #!/usr/bin/python3
 
 import sys
-sys.path.append("..")
-
+sys.path.append("../..")
 import euler.mymath
 
-for i in range(1, 10000):
-    all_amicables = []
-    a = i
+all_amicables = []
+for a in range(1, 10000):
     b = sum(euler.mymath.proper_divisors(a))
-    
-        all_amicables.append((a, b))
+    if euler.mymath.is_amicable(a, b) == True and (a != b):
+        if (b, a) not in all_amicables: 
+            all_amicables.append((a, b))
     
 total = 0
 for amicable in all_amicables:
     total += amicable[0] + amicable[1]
-
+print(all_amicables)
 print(total)
