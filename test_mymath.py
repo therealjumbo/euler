@@ -1,7 +1,7 @@
 from nose.tools import *
 from euler.mymath import *
 
-def test_first_100_non_primes_is_prime_():
+def test_first_100_non_primes_is_prime():
     non_primes = [0, 1, 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25,
     26, 27, 28, 30, 32, 33, 34, 35, 36, 38, 39, 40, 42, 44, 45, 46, 48, 49, 50,
     51, 52, 54, 55, 56, 57, 58, 60, 62, 63, 64, 65, 66, 68, 69, 70, 72, 74, 75,
@@ -11,7 +11,7 @@ def test_first_100_non_primes_is_prime_():
     for non_prime in non_primes:
         assert is_prime(non_prime) == False
 
-def test_first_100_primes_is_prime_():
+def test_first_100_primes_is_prime():
     primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,
     89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,
     191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,
